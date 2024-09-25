@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        background-color:rgb(249, 220, 183);
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .task{
+        height: 100vh;
+        width: 100%;
+
+    }
+    
+    
+    .child1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       
+    }
+    .parent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .full{
+        display: flex;
+        flex-direction: row;
+    }
+    .child2{
+        display: grid;
+      grid-template-columns: 200px 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px 400px;
+      row-gap: 2px;
+      column-gap: 2px;
+    }
+    .item1{
+      background-image: url("https://w0.peakpx.com/wallpaper/695/635/HD-wallpaper-books-dark-shelf-library-thumbnail.jpg");
+       grid-row-start:1;
+       grid-row-end:4;
+       grid-column-start:1;
+       grid-column-end: 3;
+       /* grid-area:one; */
+
+
+    }
+    .item2{
+        background-image: url("https://w0.peakpx.com/wallpaper/547/835/HD-wallpaper-vertical-paper-books-simple.jpg");
+        /* grid-area: two; */
+        grid-row-start:1;
+       grid-row-end:3 ;
+       grid-column-start:3;
+       grid-column-end: 5;
+
+
+    }
+    .item3{
+       background-image: url("https://w0.peakpx.com/wallpaper/420/125/HD-wallpaper-view-of-floating-open-book-from-stacked-books-in-library-thumbnail.jpg");
+        /* grid-area: three; */
+        grid-row-start:4;
+       grid-row-end:5 ;
+       grid-column-start:1;
+       grid-column-end: 3;
+       
+
+    }
+    .item4{
+        background-image: url("https://img.freepik.com/premium-photo/vintage-old-book-blackboard-background-vertical_771335-8635.jpg");
+        /* grid-area: four; */
+        grid-row-start:3;
+       grid-row-end:5 ;
+       grid-column-start:3;
+       grid-column-end: 5;
+       
+    }
+    .child3{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .child31{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .pipe{
+      
+        
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px 100px;
+        grid-template-rows: 225px 225px 50px;
+        column-gap: 1px;
+       
+    
+        
+    }
+    .pipe1{
+        background-image: url("https://i.pinimg.com/474x/9b/8e/74/9b8e748eeb6a0968321a747d17daca69.jpg");
+        grid-row-start:1;
+       grid-row-end:4;
+       grid-column-start:1;
+       grid-column-end: 3;
+      
+
+
+    }
+    .pipe2{
+        background-image: url("https://www.wallpaperuse.com/wallp/59-590471_m.jpg");
+        grid-row-start:1;
+       grid-row-end:4 ;
+       grid-column-start:3;
+       grid-column-end: 5;
+
+    }
+    .child4{
+        display: flex;
+        
+    }
+    .button{
+        display: flex;
+        
+    }
+    
+    
+
+    
+</style>
+<body>
+    <div class="task">
+    <div class="child1">
+        <div class="head1">
+            <h1 style="color: rgb(85, 34, 34); color;">TRIVIA</h1>
+        </div>
+        <div class="head2" style="margin-top: 20px;">
+           <input style="width: 500px; height: 30px; border-color: rgb(0, 0, 0); color;" placeholder="TYPE HERE TO SEARCH.."  type="text" >
+           <mi class="parent" style="margin-top: 10px;">
+            <div><a href="top" style="color: rgb(85, 34, 34); text-decoration: none;">HOME</a></div>
+           <DIV><a href="https://unsplash.com/s/photos/book" target="_blank" style="color: rgb(85, 34, 34); text-decoration: none;">IMAGES</a></DIV>
+           <DIV><a href="#map" target="_blank" style="color: rgb(85, 34, 34); text-decoration: none;">MAPS</a></DIV>
+           <DIV><a href="https://www.frenzoacademy.com/contact" target="_blank" style="color: rgb(85, 34, 34); text-decoration: none;">CONTACT</a></DIV>
+           <DIV><a href="https://www.frenzoacademy.com/" target="_blank" style="color: rgb(85, 34, 34); text-decoration: none;">ABOUT US</a></DIV>
+           </mi>
+        </div>
+        <div class="button" style="color: rgb(85, 34, 34); color;"><h1>SUBSCRIBE</h1> <svg style="margin-top: 28px; margin-left: 10px;"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-bell"
+        >
+            <path
+                d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"
+            />
+            <path
+                d="M13.73 21a2 2 0 0 1-3.46 0"
+            />
+        </svg>
+        </div>
+    </div>
+   <div class="full"> 
+    <div class="child2" style="margin-top: 100px; margin-left: 100px;">
+           <div class="item1">1</div> 
+           <div class="item2"> 5<img src="" alt=""></div>
+           <div class="item3">2 <img src="" alt=""></div>
+           <div class="item4">3 <img src="" alt=""></div>
+           
+
+           
+    </div>
+    <div style="margin-top: 100px; margin-left: 50px; color: rgb(85, 34, 34); " ><h1  >Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1><p style="width: 500px; color: rgb(85, 34, 34); color;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, distinctio temporibus nemo aperiam adipisci asperiores dignissimos obcaecati id error fugiat. Doloremque, quibusdam laboriosam! Ducimus fugit obcaecati nisi in dicta, assumenda asperiores cupiditate recusandae iure suscipit ad incidunt aperiam minus unde? Reiciendis sint veritatis quos repellendus eligendi ut, vero vitae ex architecto sed, molestias, eos fuga? Natus, nemo autem eligendi vitae harum excepturi odit, rerum facere beatae nisi ipsa eveniet deleniti maxime blanditiis deserunt. Minima, accusamus blanditiis illum quis voluptate laboriosam nesciunt consequuntur quibusdam modi nisi tenetur maxime vel possimus veritatis, assumenda dolores hic aliquam unde totam perspiciatis voluptatem natus! Voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi quasi sint pariatur quo illo exercitationem rem, molestiae dolorum inventore deleniti similique nam nemo dolor quisquam dolore dolorem saepe commodi vero. A accusamus, asperiores explicabo neque sequi aliquam, culpa quae debitis iste deleniti officia at magni ipsa sed, incidunt earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi!</p>
+        <h2 style=" margin-left: 230px; margin-top: 50px;">Log In</h2><input style="padding: 10px; margin-top: 10px; margin-left: 180px; border-radius: 19px;" type="text"  placeholder= "👤Email id" style="background-color: transparent;">
+        <br>
+        <br>
+        <input style="padding: 10px; margin-left: 180px; border-radius: 19px;" type="password" placeholder="🔒Password" ><br>
+        <p style="margin-left: 260px;">or</p>
+        <button style="padding: 10px; background-color: rgb(85, 34, 34); color: antiquewhite; margin-left: 205px;">Sign in with google</button> 
+    </div>
+    
+</div>
+    <div class="child3">
+        <div class="child31">
+        <div style="margin-left: 100px; "><h1 style="margin-top: 50px;color: rgb(85, 34, 34); color;">FREQUENTLY </h1><h1 style="color: rgb(85, 34, 34); color;">BOUGHT TOGETHER</h1></div>
+        <div style="margin-left: 100px; color: rgb(85, 34, 34); color;"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, aliquid!</p></div>
+        <div><p style="border: 1px solid black; background-color: rgb(85, 34, 34); width: 190px; padding: 10px; margin-left: 100px; color: antiquewhite;">Lorem ipsum dolor sit amet.</p></div>
+    </div>
+        <div class="pipe" style="margin-top: 50px;">
+            <div class="pipe1">1</div>
+            <div class="pipe2">2</div>
+            <div class="pipe3">3</div>
+        </div>
+    </div>
+    <div class="child4">
+        <div><p style="width: 500px; margin-left: 100px; margin-top: 50px; color: rgb(85, 34, 34); color;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, itaque!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga mollitia nam nobis, quis nesciunt aliquid deleniti, neque doloribus quae doloremque ipsa dolores labore, quos sed voluptatum enim temporibus voluptatibus animi impedit assumenda aut ipsam! Ut amet quisquam dolor possimus labore.</p></div>
+        <div><img  style=" width: 800px; margin-top: 50px; height: 300px;"  src="https://wallpapers.com/images/hd/library-filled-with-books-vyy56lqa9wji657j.jpg" alt=""></div>
+    </div>
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.9414153172024!2d77.02058699999999!3d11.0249119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857ae115e51f7%3A0x4173b44af344c6!2sFrenzo%20Academy!5e1!3m2!1sen!2sin!4v1724158395570!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>  
+</body>
+</html>
